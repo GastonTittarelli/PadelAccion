@@ -1,0 +1,42 @@
+/* Contenedor principal del torneo */
+.torneo-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Título principal */
+.torneo-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Título de las zonas */
+.zonas-title {
+  font-size: 20px;
+  margin: 20px 0 10px;
+  color: #444;
+}
+
+/* Contenedor de las zonas */
+.zonas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Estilo de las tarjetas de cada zona */
+.zona-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.zona-card strong {
+  color: #333;
+}

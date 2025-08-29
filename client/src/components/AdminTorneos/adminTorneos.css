@@ -1,0 +1,91 @@
+.crear-torneo {
+  max-width: 340px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.crear-torneo__titulo {
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.crear-torneo__mensaje {
+  text-align: center;
+  color: green;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.crear-torneo__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.crear-torneo__campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.crear-torneo__label {
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.crear-torneo__select,
+.crear-torneo__input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.crear-torneo__select:focus,
+.crear-torneo__input:focus {
+  border-color: #007bff;
+}
+
+.crear-torneo__boton {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.crear-torneo__boton:hover {
+  background-color: #0056b3;
+}
+
+.crear-torneo__zonas {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.crear-torneo__zonas-lista {
+  margin-top: 10px;
+}
+
+.crear-torneo__zona-item {
+  list-style: none;
+  background-color: #f4f4f4;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 5px;
+}

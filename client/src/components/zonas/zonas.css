@@ -1,0 +1,33 @@
+.zonas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.zona-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 500px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.zona-card h2 {
+  margin: 0 0 10px;
+}
+
+.zona-card p {
+  margin: 5px 0;
+}
+
+.distribucion{
+  display: grid;
+  grid-template-columns: 10px 150px 30px;
+  grid-template-rows: 1fr;
+  text-align: center;
+  justify-content: center;
+}

@@ -1,0 +1,271 @@
+
+.contenedorTorneoCompleto {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #252223; 
+  border-radius: 12px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* Estilos para la información del torneo */
+.contenedorInfoTorneo {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+.contenedorInfoTorneo h1 {
+  font-size: 2.4rem;
+  font-family: "Lato", sans-serif;
+  color: #FAFF2C;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #FAFF2C;
+  padding-bottom: 10px;
+}
+
+.contenedorInfoTorneo p {
+  font-size: 1.1rem;
+  color: #e4e2e2;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 0;
+  font-weight: 400;
+  font-style: italic;
+}
+.contenedorInfoTorneo {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.contenedorInfoTorneo .categoriaTorneo{
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: normal;
+}
+/* #252223 #FAFF2C #e4e2e2; */
+/* Estilos para las zonas */
+.contenedorZonas {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contenedorInfoZonas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+  padding: 20px;
+  background-color: #e8eb4e;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px;
+}
+
+/* Efecto de hover para las zonas */
+.contenedorInfoZonas:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tituloZona {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #252223;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid #252223;
+  padding-bottom: 5px;
+}
+
+.contenedorInfoZonas .fechaZona {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 15px;
+  /* font-weight: 300; */
+  font-style: italic;
+  text-align: center;
+}
+
+/* Estilos para los enfrentamientos dentro de cada zona */
+.enfrentamientos {
+  display: grid;
+  grid-template-columns: 35px 1fr 50px 60px;
+  gap: 20px;
+  width: 100%;
+}
+
+.numerosZona,
+.numerosEnfrentamientos {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.numerosZona p,
+.numerosEnfrentamientos p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #252223;
+  padding: 8px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.parejasZona {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.pareja {
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #252223;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para cada pareja */
+}
+
+/* Estilos para los horarios */
+.horariosZona {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.horario {
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #252223;
+  background-color: #ffffff;
+  padding: 6px ;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilos generales para la tipografía */
+.contenedorTorneoCompleto h2, .contenedorTorneoCompleto h4 {
+  color: #252223;
+  font-weight: bold;
+}
+
+.contenedorTorneoCompleto h2 {
+  font-size: 1.8rem;
+}
+
+.contenedorTorneoCompleto h4 {
+  font-size: 1.2rem;
+  color: #252223;
+}
+
+
+@media screen and (max-width: 500px) {
+  
+  .contenedorTorneoCompleto {
+    width: 100%; 
+    background-color: transparent;
+    box-shadow: none;
+    padding: 30px 0 20px 0;
+  }
+  
+  /* Estilos para la información del torneo */
+  .contenedorInfoTorneo {
+    padding: 20px;
+    background-color: RGB(37, 34, 35);
+    border-radius: 12px;
+    width: 95%;
+    margin-top: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contenedorZonas{
+    background-color: transparent;
+  }
+
+  .contenedorInfoZonas {
+    width: 95%;
+    padding: 10px;
+    border-radius: 15px;
+    transition: none;
+  }
+  
+  .contenedorInfoZonas:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .tituloZona {
+    font-size: 1.5rem;
+  }
+  
+  .enfrentamientos {
+    grid-template-columns: 32px 1fr 40px 50px;
+    gap: 8px;
+    height: 160px;
+  }
+  
+  .numerosZona,
+  .numerosEnfrentamientos {
+    gap: 0;
+    justify-content: space-between;
+  }
+  
+  .numerosZona p,
+  .numerosEnfrentamientos p {
+    font-size: .9rem;
+    padding: 8px;    
+  }
+  
+  .parejasZona {
+    gap: 0;
+    justify-content: space-between;
+  }
+  
+  .pareja {
+    font-size: .9rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilos para los horarios */
+  .horariosZona {
+    justify-content: space-between;
+    gap: 0;
+    padding: 2px 0 2px 0;
+  }
+  
+  .horario {
+    font-size: .9rem;
+    text-align: center;
+    gap: 0;
+  }
+  
+  .contenedorTorneoCompleto h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contenedorTorneoCompleto h4 {
+    font-size: 1.1rem;
+  }
+}

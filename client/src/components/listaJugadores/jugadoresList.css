@@ -1,0 +1,157 @@
+.containerPlayers{
+  /* background-color: rgb(234 231 218); */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Lexend Giga", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* letter-spacing: 0; */
+}
+
+.inputCategoria {
+  width: 500px;
+  padding: 9px;
+  margin: 2px;
+  border: 1px solid #6b6b6b;
+  border-radius: 4px;
+  font-size: .8rem;
+  background-color: #5e5f51; 
+  font-family: "Roboto", serif;
+  color: #ffffff; 
+}
+
+.inputCategoria::placeholder {
+  color: #ffffff; 
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inputCategoria:focus {
+  outline: none;
+  border: 1px solid #000000;
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 20px;
+  background-color: #252223; 
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.subTitles {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #FAFF2C; 
+}
+
+.subTitles h4 {
+  font-size: 1.3rem;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  color: #FAFF2C; /* Amarillo brillante */
+  margin: 0;
+}
+
+.players {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", serif;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #373737; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: reveal linear both;
+  animation-timeline: view();
+}
+
+@keyframes reveal{
+  
+  46.8%{
+    background-color: #373737;
+    scale: 1; 
+  }
+  47%{
+    background-color: #525310; 
+  }
+  50% {
+    background-color: #525310; 
+    scale: 1.04;
+  }
+  53.8%{
+    background-color: #525310; 
+    
+  }
+  54%{
+    background-color: #373737;
+    scale: 1; 
+  }
+  
+}
+
+
+@keyframes hidde{
+  to{
+    background-color: #373737; 
+  }
+}
+
+.nombre {
+  font-size: 1rem;
+  color: #FAFF2C; /* Amarillo brillante */
+}
+
+.categoriaNum {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FAFF2C; /* Amarillo brillante */
+  text-align: right;
+  margin-right: 30px;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  .title{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  .inputCategoria {
+    width: 80%;
+    padding: 10px;
+    font-size: .9rem;
+  }
+  .inputCategoria::placeholder {
+    font-size: .8rem;
+  }
+  .tableContainer{
+    width: 80%;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,4 @@
+# Ignorar todas las carpetas node_modules en cualquier ubicación
+/node_modules/
+/client/node_modules/
+/server/node_modules/

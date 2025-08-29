@@ -1,0 +1,180 @@
+.loginContainer{
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  height: 78vh;
+}
+
+.imagenLogin{
+  height: 487px;
+  width: 50%;
+}
+
+.men, .ball{
+  height: 487px;
+  
+  position: absolute;
+}
+
+.men{
+  right: 300px;
+  top: 0%;
+  opacity: 0; 
+  transform: translateX(450px); 
+  animation: appearRight 0.5s ease forwards; 
+  animation-delay: .3s; 
+}
+
+@keyframes appearRight {
+  to {
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+
+.ball{
+  left: 450px;
+  top: 0%;
+  opacity: 0; 
+  transform: translateX(-450px); 
+  animation: appearLeft 0.5s ease forwards; 
+  animation-delay: .3s; 
+}
+
+@keyframes appearLeft {
+  to {
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+
+
+.loginBotones{
+  z-index: 10;
+  width: 45%;
+  display: flex;
+  justify-content: end;
+}
+
+.gestionUsuario{
+  height: 100%;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.usuario{
+  background-color: #333;
+  padding: 7px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: solid 1px black;
+  color: #FAFF2C;
+  font-family: "Roboto", sans-serif;
+}
+
+.logoutBoton {
+  background-color: #ffffff;
+  color: #555555;
+  border: 2px solid #dddddd;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logoutBoton:hover {
+  background-color: #f7f7f7;
+  color: #333333;
+  cursor: pointer;
+}
+
+.logoutBoton:active {
+  background-color: #eaeaea;
+}
+
+
+.loginBoton{
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 30vw;
+  border: solid 1px #747775;
+  opacity: 0; 
+  transform: translateY(10px); 
+  animation: fadeIn 0.5s ease forwards; 
+  animation-delay: .3s; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.loginBoton:hover{
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.loginBoton:active{
+  background-color: #eaeaea;
+}
+
+.loginBoton img{
+  width: 20px;
+  height: 20px;
+}
+
+.loginBoton p{
+  font-size: .9rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 500px){
+  .loginContainer{
+    margin-top: 3rem;
+  }
+
+  .men{
+    right: -90px;    
+  }
+  .ball{
+    left: 30px;
+  }
+  /* .imagenLogin{
+    overflow: hidden;
+  } */
+
+  /* .loginBotones{
+    position: absolute;
+    justify-content: start;
+    padding-left: 1rem;
+    align-content: start;
+  } */
+  
+  .gestionUsuario{
+    width: 200px;
+  }
+
+  .usuario{
+    font-size: 1rem;
+    padding: 5px;
+  }
+}
