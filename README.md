@@ -1,7 +1,16 @@
 
-# 📱 Padel Manager
+# 📱 Gestión de torneos de Padel
 
 Aplicación web en proceso de desarrollo, pensada principalmente para **vista mobile**, que permite **gestionar torneos de pádel**.
+
+---
+
+## 📸 Screenshots
+- **Categoría**
+<img width="1920" height="918" alt="screenshot7" src="https://github.com/user-attachments/assets/cb6eabc1-aed8-4323-afc4-ab2a2883be46" />
+
+- **Creación & Login**
+<img width="1920" height="918" alt="screenshot8" src="https://github.com/user-attachments/assets/89c749ce-427f-4c45-999f-3de8184a4ecc" />
 
 ---
 
